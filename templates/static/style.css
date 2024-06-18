@@ -32,6 +32,19 @@ h1 {
     font-size: 200%;
 }
 
+#linkPlanilha{
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#linkPlanilha:hover{
+    text-decoration: underline;
+    color: #28a745;
+    box-shadow: greenyellow 1px 1px 5px;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -114,6 +127,10 @@ input[type="submit"]:hover {
     label, select, input[type="number"], #impObservacoes {
         width: 70%;
         font-size: 12px;
+    }
+
+    #linkPlanilha{
+        font-size: 15px;
     }
 }
 
