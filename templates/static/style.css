@@ -12,7 +12,7 @@ body {
 }
 
 .logo {
-    width: 150px;
+    width: 25%;
     margin-top: 3%;
 }
 
@@ -20,7 +20,7 @@ main {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    width: 55%;
+    width: 50%;
     margin-top: 5%;
     margin-bottom: 5%;
     border: white 1px solid;
@@ -29,6 +29,7 @@ main {
 
 h1 {
     margin-bottom: 20px;
+    font-size: 200%;
 }
 
 form {
@@ -37,14 +38,13 @@ form {
     align-items: center;
 }
 
-label, select, input[type="number"] {
+label, select, input[type="number"], #impObservacoes {
     font-size: 18px;
     margin: 10px 0;
-    width: 100%;
-    max-width: 300px;
+    width: 45%;   
 }
 
-select, input[type="number"], input[type="submit"] {
+select, input[type="number"], input[type="submit"], #impObservacoes {
     padding: 10px;
     border: 2px solid #fff;
     border-radius: 10px;
@@ -53,6 +53,11 @@ select, input[type="number"], input[type="submit"] {
     outline: none;
     transition: background 0.3s, border-color 0.3s;
 }
+
+option{
+    color: rgb(0, 0, 77);
+}
+
 
 select:focus, input[type="number"]:focus, input[type="submit"]:hover {
     background: rgba(255, 255, 255, 0.3);
@@ -73,6 +78,7 @@ input[type="submit"] {
     font-size: large;
     text-transform: uppercase;
 }
+  
 
 input[type="submit"]:hover {
     background-color: #218838;
@@ -81,3 +87,34 @@ input[type="submit"]:hover {
     border: 1px white solid;
     box-shadow: greenyellow 1px 1px 10px;
 }
+
+#impObservacoes{
+    height: 15vh;
+}
+
+
+@media screen and (max-width: 450px) {
+    input[type="submit"] {
+        font-size: small;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    main{
+        width: 80%;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 100%;
+    }
+
+    label, select, input[type="number"], #impObservacoes {
+        width: 70%;
+        font-size: 12px;
+    }
+}
+
+
+
